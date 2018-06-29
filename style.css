@@ -1,0 +1,13 @@
+
+
+
+#repartir {
+	display: block;
+	margin: auto;
+}
+
+
+.table {
+	min-height: 30px;
+	border: 1px grey solid;
+}
