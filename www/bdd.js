@@ -2,33 +2,63 @@
 
 var bdd = [
 	{
-		prenom: "Luc", 
-		nom: "Cano-Simon", 
-		annee: 1989
+		prenom: "Abdelkader", 
+		nom: "?"
 	},
 	{
-		prenom: "Marc", 
-		nom: "Lupi", 
-		annee: 1968
+		prenom: "Alban", 
+		nom: "?"
 	},
 	{
-		prenom: "Houssine", 
-		nom: "Zarrick", 
-		annee: 1993
+		prenom: "Thomas", 
+		nom: "?"
 	},
 	{
-		prenom: "Adeline", 
-		nom: "Badji", 
-		annee: 1986
+		prenom: "Aloïs", 
+		nom: "?"
 	},
 	{
-		prenom: "Nathan", 
-		nom: "Clerc", 
-		annee: 1999
+		prenom: "Antoni", 
+		nom: "?"
 	},
 	{
 		prenom: "Dylan", 
-		nom: "Gouzenne", 
-		annee: 1995
+		nom: "Gouzenne"
+	},
+	{
+		prenom: "Elikya", 
+		nom: "?"
+	},
+	{
+		prenom: "Hervé", 
+		nom: "?"
+	},
+	{
+		prenom: "Kamel", 
+		nom: "?"
+	},
+	{
+		prenom: "Nolwenn", 
+		nom: "Mercier"
+	},
+	{
+		prenom: "Polo", 
+		nom: "?"
+	},
+	{
+		prenom: "Rostand", 
+		nom: "Garrigues"
+	},
+	{
+		prenom: "Sergueï", 
+		nom: "?"
+	},
+	{
+		prenom: "Yoan", 
+		nom: "?"
+	},
+	{
+		prenom: "? le soldat inconue", 
+		nom: "?"
 	}
 ];
