@@ -7,23 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
+	<div id="commande">
 
-	<input type="button" id="repartir" value="Répartir" onclick="window.location.reload()" />
+		<label for="repartir">Lancer le trie</label>
+		<input type="button" class="bouton" id="repartir" value="Go" onclick="window.location.reload()" />
+		
+		<label for="nb_groupes">Nombre de groupes</label>
+		<input type="number" class="bouton" id="nb_groupes" value="3" min="2" max="100" />
+	
+	</div>
 
-	<h1>Table 1</h1>
-	<ul class="table" id="t0"></ul>
-
-	<h1>Table 2</h1>
-	<ul class="table" id="t1"></ul>
-
-	<h1>Table 3</h1>
-	<ul class="table" id="t2"></ul>
-
-	<h1>Table 4</h1>
-	<ul class="table" id="t3"></ul>
-
-	<h1>Table 5</h1>
-	<ul class="table" id="t4"></ul>
+	<div id="groups"></div>
 
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bdd.js"></script>

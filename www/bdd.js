@@ -1,5 +1,3 @@
-
-
 var bdd = [
 	{
 		prenom: "Abdelkader", 

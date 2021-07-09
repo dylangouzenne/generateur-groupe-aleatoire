@@ -1,13 +1,32 @@
 
+#commande {
+	display: flex;
+    flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
 
-
-#repartir {
-	display: block;
-	margin: auto;
+.bouton {
+	margin: 50px;
 }
 
 
-.table {
-	min-height: 30px;
-	border: 1px grey solid;
+#groups {
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	min-width: 200px;
+}
+
+.groupe {
+	display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	align-items: left;
+	margin: 20px;
+	padding : 20px;
+	min-height: 200px;
+	border: 2px grey solid;
 }

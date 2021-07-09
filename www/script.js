@@ -1,5 +1,3 @@
-
-
 /*
 
 	Dans un premier temps, on mélange les personnes
@@ -10,8 +8,8 @@
 
 var tableau_melange = [];
 
-do
-{
+do {
+
 	var j = Math.floor( Math.random() * bdd.length );
 	var personne = bdd[j];
 
@@ -22,25 +20,37 @@ do
 while( bdd.length>0 );
 
 
-
-
-
-
 /*
 
-	Je distribue les personnes dans chaque table,
-	d'abord t1, puis t2, t3, t4, puis on reprend
-	à t1, etc...
+	creer les groupe en fonction du nombre souhaité
 
 */
 
-var ntables = $('.table').length;
+// var nb_groupes = document.getElementById("nb_groupes").value;
+var nb_groupes = 5 ;
 
-for( var i=0 ; i<ntables ; i++ )
-{
-	$('#t' + i).append('<li>' + tableau_melange[0+(3*i)].prenom + '</li>');
-	$('#t' + i).append('<li>' + tableau_melange[1+(3*i)].prenom + '</li>');
-	$('#t' + i).append('<li>' + tableau_melange[2+(3*i)].prenom + '</li>');
-}
+for( var i=0 ; i<nb_groupes ; i++ ) {
+	/*
 
+		Je distribue les personnes dans chaque groupe,
+		d'abord g1, puis g2, g3, g4, puis on reprend
+		à g1, etc...
 
+	*/
+	var num_groupe = i + 1
+	var nb_personnes = tableau_melange.length / nb_groupes
+
+	$('#groups').append(
+		
+		'<div class="groupe">' +
+			'<h1>' + 'Groupe ' + num_groupe + '</h1></br> \
+			<h3>' + 'Nombre de personne dans le groupe = ' + nb_personnes + '</h3></br> \
+			<ul>' + 
+				'<li>' + tableau_melange[0+(3*i)].prenom + '</li> \
+				<li>' + tableau_melange[1+(3*i)].prenom + '</li> \
+				<li>' + tableau_melange[2+(3*i)].prenom + '</li> \
+			</ul> \
+		</div>'
+	);
+	
+};
