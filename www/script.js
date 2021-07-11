@@ -26,10 +26,17 @@ while( bdd.length>0 );
 
 */
 
-// var nb_groupes = document.getElementById("nb_groupes").value;
+stockage = localStorage;
+
+var set_nb_groupes = document.getElementById("nb_groupes").value;
+
+window.localStorage.setItem("nb_groupes", set_nb_groupes);
+
+$('#get_nb_groupes').append("test nombre de groupes = " + window.stockage.getItem('nb_groupes'));
+
 var nb_groupes = 5 ;
 
-for( var i=0 ; i<nb_groupes ; i++ ) {
+for( var i=0 ; i<set_nb_groupes ; i++ ) {
 	/*
 
 		Je distribue les personnes dans chaque groupe,
