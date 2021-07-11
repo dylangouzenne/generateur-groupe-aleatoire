@@ -40,7 +40,7 @@ var bdd = [
 		nom: "Mercier"
 	},
 	{
-		prenom: "Polo", 
+		prenom: "Paul", 
 		nom: "?"
 	},
 	{

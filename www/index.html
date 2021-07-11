@@ -10,16 +10,15 @@
 	<div id="commande">
 		
 		<label for="nb_groupes">Nombre de groupes : </label>
-		<input type="number" class="bouton" id="nb_groupes" value="3" min="2" max="100" />
+		<input type="number" class="bouton" id="nb_groupes" value="5" min="2" max="100" />
 
 		<label for="repartir">Lancer le trie : </label>
-		<input type="button" class="bouton" id="repartir" value="Go" onclick="window.location.reload()" />
+		<input type="submit" class="bouton" id="repartir" value="Go">
+		<!-- <input type="button" class="bouton" id="repartir" value="Go" onclick="window.location.reload()" /> -->
 	
 	</div>
 
-	<h2 id="get_nb_groupes"></h2>
-
-	<div id="groups"></div>
+	<div id="groupes"></div>
 
 	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="bdd.js"></script>
